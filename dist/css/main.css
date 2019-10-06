@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+
+#name {
+  color: #ffa33a; }
+
+#clock {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  color: #eeeeee;
+  text-shadow: 0 5px 15px black; }
+
+#icon {
+  width: 100px;
+  height: 100px; }
+
+form input {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 20px;
+  padding: 10px;
+  width: 600px;
+  background: rgba(51, 51, 51, 0.048);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+  color: #eeeeee;
+  text-shadow: 0 5px 15px black; }
+  form input::placeholder {
+    color: rgba(255, 255, 255, 0.479);
+    text-align: center;
+    letter-spacing: 15px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-shadow: 0 5px 15px black;
+    text-transform: uppercase; }
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 400px;
+  margin-bottom: 30px;
+  text-shadow: 0 5px 15px black; }
+
+.container {
+  width: 300px;
+  background: rgba(255, 255, 255, 0);
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+  .container .app-title {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px 10px 0 0; }
+    .container .app-title p {
+      text-align: center;
+      padding: 15px;
+      margin: 0 auto;
+      font-size: 1.8rem;
+      color: #eeeeee;
+      text-shadow: 0 5px 15px black; }
+  .container .notification {
+    background-color: #f8d7da;
+    display: none; }
+    .container .notification p {
+      color: #eeeeee;
+      font-size: 1.2em;
+      margin: 0;
+      text-align: center;
+      padding: 10px 0; }
+  .container .weather-container {
+    width: 300px;
+    height: 260px;
+    background-color: rgba(244, 249, 255, 0); }
+    .container .weather-container .weather-icon {
+      width: 300px;
+      height: 128px; }
+      .container .weather-container .weather-icon img {
+        display: block;
+        margin: 0 auto; }
+    .container .weather-container .temperature-value {
+      width: 300px;
+      height: 60px; }
+      .container .weather-container .temperature-value p {
+        padding: 0;
+        margin: 0;
+        color: #eeeeee;
+        text-shadow: 0 5px 15px black;
+        font-size: 4em;
+        text-align: center;
+        cursor: pointer; }
+    .container .weather-container .temperature-description p {
+      padding: 8px;
+      margin: 0;
+      color: #eeeeee;
+      text-shadow: 0 5px 15px black;
+      text-align: center;
+      font-size: 1.2em; }
+    .container .weather-container .location p {
+      margin: 0;
+      padding: 0;
+      color: #eeeeee;
+      text-shadow: 0 5px 15px black;
+      text-align: center;
+      font-size: 1em;
+      text-transform: uppercase;
+      font-weight: bolder; }

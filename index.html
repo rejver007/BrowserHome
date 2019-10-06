@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <title>Home</title>
+
+
+
+
+</head>
+
+<body onload="myFunction(); myFunction2();">
+    <div id="clock"></div>
+    
+    <div class="container">
+        <div class="app-title">
+            <p>Weather</p>
+        </div>
+        <div class="notification"> </div>
+        <div class="weather-container">
+            <div class="weather-icon">
+                <img src="icons/unknown.png" alt="">
+            </div>
+            <div class="temperature-value">
+                <p>- °<span>C</span></p>
+            </div>
+            <div class="temperature-description">
+                <p> - </p>
+            </div>
+            <div class="location">
+                <p>-</p>
+            </div>
+        </div>
+    </div>
+
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+        <h1><span id="greeting"></span><span id="name"> Admir</span>, what is your focus <span id="greeting2"></span>
+        </h1>
+        <input type="text" name="q" placeholder="Google">
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="dynamicbg.js"></script>
+</body>
+
+</html>
