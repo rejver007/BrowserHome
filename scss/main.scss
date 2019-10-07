@@ -5,7 +5,7 @@
     //outline: 1px solid red;
 }
 body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poiret One', cursive;
     height: 100vh;
 }
 #name{
@@ -16,25 +16,38 @@ body{
 .links{
     position: relative;
     left: 5%;
-    top: 5%;
+    top: 50px;
     color: #ffffff;
     width: 70px;
     .link{
-        width: 70px;
+        width: 50px;
+        
         background: none;
         color: #f8d7da;
+        box-shadow: 0 5px 15px black;
         text-shadow: 0 5px 15px black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding: 5px;
+        border-radius: 5px;
         border: none;
         outline: none;
+        i{
+            margin-top: -15px;
+        }
         &:hover{
-            color:rgb(255, 163, 58);
+            color:rgb(0, 0, 0);
             transition: all 0.5s ease;
             cursor: pointer;
         }
     }
     ul{
         position: absolute;
-        background: #f8d7da23;
+        background: #f8d7da1c;
+        box-shadow: 0 5px 15px black;
+        border-radius: 10px;
         margin-top: 10px;
         width: 150px;
         height: 350px;
@@ -55,10 +68,12 @@ body{
             color:rgb(238, 238, 238);
             text-decoration: none;
             &:hover{
-                color: rgb(255, 163, 58);
+                color: rgb(0, 0, 0);
                 border-radius: 5px;
                 transition: all 0.5s ease;
                 pointer-events: all;
+                background: #bdbcbc;
+                padding: 2px;
                 
             }
             
@@ -72,7 +87,7 @@ body{
             padding: 5px;
             border-radius: 5px;
             &:hover{
-                background:#f8d7da2c;
+                background:#f8d7da00;
             }
             
             
@@ -84,6 +99,12 @@ body{
         pointer-events: all;
         transform: translateY(0px)
     }
+    #netflix{
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        padding: 0;
+    }
 }
 
 
@@ -93,53 +114,22 @@ body{
     position: absolute;
     top: 50px;
     right: 50px;
-    font-size: 3rem;
+    font-size: 1.3rem;
     letter-spacing: 5px;
-    color: rgb(238, 238, 238);
-    text-shadow: 0 5px 15px black;
+    color: rgb(46, 46, 46);
+    text-shadow: 0 5px 15px rgb(255, 255, 255);
+    font-family: 'Press Start 2P', cursive;
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 0 5px 15px black;
+    border-radius: 10px;
 }
 #icon{
     width: 100px;
     height: 100px;
     
 }
-form{
-    position: absolute;
-    bottom: 20%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 100%;
-    input{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        margin-top: 20px;
-        padding: 10px;
-        width: 600px;
-        background: rgba(51, 51, 51, 0.048);
-        outline: none;
-        border: none;
-        border-bottom: 1px solid rgb(255, 255, 255);
-        color: rgb(238, 238, 238);
-        text-shadow: 0 5px 15px black;
-        &::placeholder{
-            color: rgba(255, 255, 255, 0.479);
-            text-align: center;
-            letter-spacing: 15px;
-            font-weight: bold;
-            font-size: 1.3rem;
-            text-shadow: 0 5px 15px black;
-            text-transform: uppercase;
-        }
-    }
-}
-h1{
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 3rem;
-    text-shadow: 0 5px 15px black;
-    margin-bottom: 30px;
-}
+
 
 
 //Weather app
@@ -148,17 +138,21 @@ h1{
     width: 300px;
     background: rgba(255, 255, 255, 0);
     display: block;
-    margin: 9 auto;
+    margin: 0 auto;
     border-radius: 10px;
     padding-bottom: 20px;
     margin-top: 60px;
+    box-shadow: 0 5px 15px black;
     position: absolute;
     left: 50%;
+    top: 0px;
     transform: translateX(-50%);
+    border: solid 1px black;
     .app-title{
         width: 300px;
         height: 50px;
         border-radius: 10px 10px 0 0;
+        margin-top: 20px;
         p{
             text-align: center;
             padding: 15px;
@@ -183,6 +177,7 @@ h1{
         width: 300px;
         height: 260px;
         background-color: rgba(244, 249, 255, 0);
+        margin-bottom: 10px;
         .weather-icon{
             margin-top: 25px;
             width: 300px;
@@ -208,8 +203,9 @@ h1{
         .temperature-description p{
             padding: 10px;
             margin: 25px 0 0;
-            color: rgb(209, 209, 209);
-            text-shadow: 0 5px 15px black;
+            color: rgb(0, 0, 0);
+            text-shadow: 0 5px 15px rgb(253, 253, 253);
+            font-weight: 500;
             text-align: center;
             font-size: 1.1em;
         }
@@ -222,6 +218,56 @@ h1{
         font-size: 1em;
         text-transform: uppercase;
         font-weight: bolder;
+        
         }
     }
+}
+form{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    input{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 20px;
+        padding: 10px;
+        width: 600px;
+        background: rgba(51, 51, 51, 0);
+        outline: none;
+        border: none;
+        border-bottom: 2px solid rgb(0, 0, 0);
+        color: rgb(238, 238, 238);
+        text-shadow: 0 5px 15px black;
+       &:focus{
+                background: rgba(65, 65, 65, 0.075);
+                border: none;
+                transition: all 0.5s ease;
+                box-shadow: 0 5px 20px black;
+            }
+        &::placeholder{
+            color: rgba(255, 255, 255, 0.479);
+            text-align: center;
+            letter-spacing: 15px;
+            font-weight: bold;
+            font-size: 1.3rem;
+            text-shadow: 0 5px 15px black;
+            text-transform: uppercase;
+            
+        }
+    }
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 0 5px 15px black;
+    margin-bottom: 30px;
+    background: rgba(51, 51, 51, 0.336);
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 5px;
 }

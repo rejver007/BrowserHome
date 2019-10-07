@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="dist/images/home.png">
+    <script src="https://kit.fontawesome.com/0f9294a366.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="dist/css/main.css">
-    <title>Home Admir</title>
+    <title>Admir Home</title>
 
 
 
@@ -15,29 +18,30 @@
 </head>
 
 <body onload="myFunction(); myFunction2();">
-    
+
 
     <div class="links">
         <button class="link">Links <i class="fa fa-sort-down fa-3x"></i></button>
         <ul>
-            <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
-            <li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i> Youtube</a></li>
-            <li><a href="https://github.com/rejver007" target="_blank"><i class="fa fa-github-square"></i> Github</a></li>
-            <li><a href="#">Link1</a></li>
-            <li><a href="#">Link1</a></li>
-            <li><a href="#">Link1</a></li>
-            <li><a href="#">Link1</a></li>
-            <li><a href="#">Link1</a></li>
-            <li><a href="#">Link1</a></li>
-            <li><a href="#">Link1</a></li>
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
+            </li>
+            <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square"></i> Youtube</a></li>
+            <li><a href="https://github.com" target="_blank"><i class="fab fa-git-square"></i> Github</a></li>
+            <li><a href="https://github.com" target="_blank"><i class="fas fa-cube"></i> Netlify</a></li>
+            <li><a href="https://mail.zoho.eu/zm/#mail/folder/inbox" target="_blank"><i class="fas fa-envelope-open-text"></i> Zoho Mail</a></li>
+            <li><a href="https://login.live.com" target="_blank"><i class="fab fa-microsoft"></i> Hotmail</a></li>
+            <li><a href="https://mail.google.com" target="_blank"><i class="fab fa-google"></i> Mail</a></li>
+
         </ul>
     </div>
 
-    <div id="clock"></div>
-    
+    <div id="clock">
+    </div>
+
+
     <div class="container">
         <div class="app-title">
-            <p>Weather</p>
+            <p id="date">Weather</p>
         </div>
         <div class="notification"> </div>
         <div class="weather-container">
@@ -59,7 +63,7 @@
     <form action="https://www.google.com/search" method="GET" target="_blank">
         <h1><span id="greeting"></span><span id="name"> Admir</span>, what is your focus <span id="greeting2"></span>
         </h1>
-        <input type="text" name="q" placeholder="Google">
+        <input type="text" name="q" placeholder="">
     </form>
 
 
