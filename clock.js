@@ -43,3 +43,11 @@ function addZero(time) {
 
 showTime()
 setInterval(showTime, 1000)
+
+
+
+n = new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
