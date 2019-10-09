@@ -5,7 +5,7 @@ if (6 <= currentTime && currentTime < 10) {
             document.body.style.backgroundSize = "cover";
     }
 }
-else if (10 <= currentTime && currentTime < 18){
+else if (10 <= currentTime && currentTime < 13){
     if (document.body){
         document.body.background = "dist/images/day.jpg",
             document.body.style.backgroundSize = "cover";
