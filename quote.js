@@ -1,6 +1,6 @@
 $(document).ready(function () {
     getQuote();
-
+    
     var randomQuote;
     var author;
     function getQuote() {
@@ -12,7 +12,10 @@ $(document).ready(function () {
     };
     
     
-    $("#newQuote").on("click", function () {
-        getQuote();
+    $("#newQuote").on("click", function () {   
+        getQuote();  
     });
+    
 });
+
+

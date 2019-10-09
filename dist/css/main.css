@@ -210,6 +210,8 @@ body {
   position: absolute;
   right: 180px;
   top: 200px; }
+  .container-fluid button:hover + .quotes {
+    border: solid 1px black !important; }
   .container-fluid button {
     position: absolute;
     left: 50%;
@@ -235,8 +237,8 @@ body {
     border: solid 1px white; }
     .container-fluid .quotes .quote {
       color: white;
-      font-size: 1.3rem;
       transition: all 0.3s ease;
+      font-size: 1.3rem;
       text-shadow: 0 5px 5px black;
       letter-spacing: 1px;
       font-weight: bold; }

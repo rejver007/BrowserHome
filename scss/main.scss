@@ -259,6 +259,9 @@ body{
     position: absolute;
     right: 180px;
     top: 200px;
+    button:hover + .quotes{
+        border:solid 1px black !important;
+    }
     button{
         position: absolute;
         left: 50%;
@@ -266,7 +269,6 @@ body{
         background: none;
         border: none;
         outline: none;
-        
         i{
         color:#fff;
         text-shadow: 0 5px 5px black;
@@ -286,12 +288,12 @@ body{
         background: rgba(51, 51, 51, 0.336);
         padding: 10px 5px 3px 10px;
         border-radius: 10px;
-        border: solid 1px white;
+        border: solid 1px rgb(255, 255, 255);
+        
         .quote{
             color: rgb(255, 255, 255);
-            
-            font-size: 1.3rem;
             transition: all 0.3s ease;
+            font-size: 1.3rem;
             text-shadow: 0 5px 5px rgb(0, 0, 0);
             letter-spacing: 1px;
             font-weight: bold;
